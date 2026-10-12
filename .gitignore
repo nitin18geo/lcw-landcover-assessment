@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.DS_Store
+# Earth Engine credentials never belong in the repo
+.config/earthengine/

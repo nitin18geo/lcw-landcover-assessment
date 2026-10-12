@@ -1,0 +1,14 @@
+# Pinned by src/env_utils.log_requirements(); new libraries are appended as notebooks use them.
+# Python 3.10+
+earthengine-api==1.7.47
+geopandas==1.2.0
+shapely==2.2.0
+pyproj==3.8.0
+rasterio==1.5.2
+numpy==2.5.3
+pandas==3.0.5
+matplotlib==3.11.2
+pillow==12.3.0
+torch==2.14.1
+transformers==5.19.0
+affine==3.0.1
