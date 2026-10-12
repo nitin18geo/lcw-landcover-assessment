@@ -1,0 +1,7 @@
+cell_id,visual_label,secondary_label,visual_cue,confidence,labelled_by,labelled_on,chip_path
+r1c2,,,,,,,outputs/chips/rgb/r1c2.png
+r1c3,,,,,,,outputs/chips/rgb/r1c3.png
+r1c4,,,,,,,outputs/chips/rgb/r1c4.png
+r2c1,,,,,,,outputs/chips/rgb/r2c1.png
+r2c2,,,,,,,outputs/chips/rgb/r2c2.png
+r3c4,,,,,,,outputs/chips/rgb/r3c4.png

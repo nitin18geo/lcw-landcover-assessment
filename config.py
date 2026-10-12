@@ -39,16 +39,16 @@ REQUIREMENTS_FILE = ROOT / "requirements.txt"
 # ---------------------------------------------------------------------------
 # 1. Google Earth Engine
 # ---------------------------------------------------------------------------
-# Read from the environment first so the project ID never has to be committed.
-EE_PROJECT = os.environ.get("EE_PROJECT", "your-gcp-project-id")   # >>> CONFIRM
 
+# Read from the environment first so the project ID never has to be committed.
+EE_PROJECT = "ee-nitinsharma"
 # ---------------------------------------------------------------------------
 # 2. Area of interest and grid
 # ---------------------------------------------------------------------------
 AOI_NAME = "placeholder_site"                                     # >>> CONFIRM
-AOI_DESCRIPTION = "Placeholder: replace with chosen site, district, state"  # >>> CONFIRM
+AOI_DESCRIPTION = "Near Dhamtari district, Chhattisgarh"  # >>> CONFIRM
 # Centre of the AOI (lon, lat, WGS84). The grid is built around this point.
-AOI_CENTER_LONLAT = (77.4800, 13.1400)                            # >>> CONFIRM
+AOI_CENTER_LONLAT = (81.525026 , 20.703383)                         # >>> CONFIRM
 
 GRID_ROWS = 3          # rows run north -> south  (r1 = northernmost)
 GRID_COLS = 4          # columns run west -> east (c1 = westernmost)
