@@ -40,34 +40,6 @@ lcw-landcover-assessment/
     └── sensitivity_prediction.md   # written and committed BEFORE the rerun
 ```
 
-## Why each piece exists (traced to the brief)
-
-| Component | Requirement it answers |
-|---|---|
-| `config.py` | "Record the exact products, dates, class crosswalk and processing choices." One file holds them, so every number in the report has one source and every change shows up in git. |
-| `src/grid.py` (UTM, pixel-snapped) | "a fixed 3 × 4 grid of 12 non-overlapping cells, each roughly 250–500 metres per side" and "Compare the same geographical footprints". Cells are exactly 500 m and exactly 50 × 50 S2 pixels, so no partial pixels enter any cell statistic. |
-| `outputs/geojson/` | "Save the boundary and cell IDs as GeoJSON". |
-| `outputs/chips/` | "export one RGB chip per cell". Native and display versions are kept so a chip can be traced back to exact pixels. |
-| `outputs/metadata/s2_image_inventory_2019.csv` | Dynamic World must be compared "for the same imagery window"; the scene list fixes that window. |
-| `obs_total` / `obs_clear` bands + `cell_valid_data_part1.csv` | "account for valid-data coverage" and the CSV column for "valid-data counts or area". |
-| `outputs/labels/` + seeded selection in `config.RANDOM_SEED` | "Select those six cells with a stated rule or random seed" and "Label them yourself from the imagery, without AI assistance… record one visual cue and a confidence level". The sheet is never overwritten by code. |
-| `outputs/model_responses/raw/` + `outputs/model_inputs/` | "raw model responses where applicable"; storing the exact input image lets any prediction be traced to its pixels. |
-| `MODEL_REVISION` pinned in `config.py` | "Implement a reproducible method": the Hugging Face weights cannot change under the analysis. |
-| Sentinel-2A, Level-1C imagery | Matches EuroSAT (Sentinel-2A, not atmospherically corrected), so the model sees the input type it was trained on. |
-| Model disclosure cell (notebook 02 §2a) | "Disclose any known overlap between a pretrained model's training data and your comparators." EuroSAT is Europe-only; no known overlap with India, Dynamic World or CGLS. |
-| `SEASON_START_MONTH` / `SEASON_END_MONTH` in `config.py` | "Compare your results with Dynamic World for the same imagery window": one season drives the composite, the EuroSAT input and the DW window. |
-| DW matched scene-by-scene to the S2 inventory, 35 % scene-cloud limit | Same imagery, not just the same dates; DW is only produced for scenes ≤ 35 % cloud. |
-| `DW_TEMPORAL_AGG` (mode / mean / median) | "Explain how you aggregated probabilities or labels"; switchable for the aggregation-rule sensitivity test. |
-| `outputs/comparators/*.tif` (DW 10 m; CGLS on 10 m grid **and** native 100 m) | "Compare the same geographical footprints and account for… the products' different resolutions and their temporal definitions." |
-| `src/cell_agg.py` majority rule + pixel accounting | Cell labels by majority over valid pixels; valid / unmapped / no-data pixel counts give the "valid-data counts or area". |
-| `outputs/tables/agreement_*.csv` | "Give denominators for any agreement statistic"; product agreement kept separate from the check against the six visual labels. |
-| `outputs/tables/crosswalk.csv` | "Record the exact products, dates, class crosswalk and processing choices." |
-| `runs/baseline/` vs `runs/sensitivity/` | "Change one choice, retain the original outputs and report what happened, including no change." |
-| `docs/sensitivity_prediction.md` | "Before rerunning, write a brief prediction". Committing it first gives a git timestamp showing the prediction preceded the result. |
-| `outputs/tables/cell_level_results.csv` | "a cell-level CSV showing initial visual labels…, method and comparator labels, valid-data counts or area, and uncertainty". |
-| `src/` modules used by both notebooks | "Be ready to trace a CSV row back to the image and code": one function per step, one place to look. |
-| `requirements.txt` logger | Reproducibility; pins are added as soon as a notebook uses a new library. |
-
 ## How to run
 
 ```bash
