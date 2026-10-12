@@ -1,0 +1,43 @@
+product,source_class,project_class
+EuroSAT ViT,AnnualCrop,cropland
+EuroSAT ViT,PermanentCrop,cropland
+EuroSAT ViT,Forest,tree_cover
+EuroSAT ViT,HerbaceousVegetation,shrub_grass
+EuroSAT ViT,Pasture,shrub_grass
+EuroSAT ViT,Highway,built_up
+EuroSAT ViT,Industrial,built_up
+EuroSAT ViT,Residential,built_up
+EuroSAT ViT,River,water
+EuroSAT ViT,SeaLake,water
+Dynamic World V1,water,water
+Dynamic World V1,trees,tree_cover
+Dynamic World V1,grass,shrub_grass
+Dynamic World V1,flooded_vegetation,shrub_grass
+Dynamic World V1,crops,cropland
+Dynamic World V1,shrub_and_scrub,shrub_grass
+Dynamic World V1,built,built_up
+Dynamic World V1,bare,bare
+Dynamic World V1,snow_and_ice,(unmapped)
+CGLS-LC100 C3,0,(unmapped)
+CGLS-LC100 C3,20,shrub_grass
+CGLS-LC100 C3,30,shrub_grass
+CGLS-LC100 C3,40,cropland
+CGLS-LC100 C3,50,built_up
+CGLS-LC100 C3,60,bare
+CGLS-LC100 C3,70,(unmapped)
+CGLS-LC100 C3,80,water
+CGLS-LC100 C3,90,shrub_grass
+CGLS-LC100 C3,100,(unmapped)
+CGLS-LC100 C3,111,tree_cover
+CGLS-LC100 C3,112,tree_cover
+CGLS-LC100 C3,113,tree_cover
+CGLS-LC100 C3,114,tree_cover
+CGLS-LC100 C3,115,tree_cover
+CGLS-LC100 C3,116,tree_cover
+CGLS-LC100 C3,121,tree_cover
+CGLS-LC100 C3,122,tree_cover
+CGLS-LC100 C3,123,tree_cover
+CGLS-LC100 C3,124,tree_cover
+CGLS-LC100 C3,125,tree_cover
+CGLS-LC100 C3,126,tree_cover
+CGLS-LC100 C3,200,water

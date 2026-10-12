@@ -1,0 +1,13 @@
+cell_id,cgls_n_px,cgls_n_valid_px,cgls_n_unmapped_px,cgls_n_nodata_px,cgls_label,cgls_top_frac,cgls_second,cgls_second_frac,cgls_label_strict,cgls_frac_water,cgls_frac_tree_cover,cgls_frac_cropland,cgls_frac_shrub_grass,cgls_frac_built_up,cgls_frac_bare,cgls_top_code,cgls_proba_median,cgls_proba_min,cgls_density_median,cgls_density_min,cgls_native_px_centres
+r1c1,2500,2500,0,0,cropland,1.0,,0.0,cropland,0.0,0.0,1.0,0.0,0.0,0.0,40,91.0,88.0,44.0,41.0,0
+r1c2,2500,2500,0,0,cropland,1.0,,0.0,cropland,0.0,0.0,1.0,0.0,0.0,0.0,40,92.0,72.0,52.0,48.0,0
+r1c3,2500,2500,0,0,cropland,0.8344,tree_cover,0.1332,cropland,0.0,0.1332,0.8344,0.0,0.0324,0.0,40,75.0,34.0,78.0,48.0,0
+r1c4,2500,2500,0,0,cropland,0.9424,built_up,0.0576,cropland,0.0,0.0,0.9424,0.0,0.0576,0.0,40,72.0,56.0,74.0,44.0,0
+r2c1,2500,2500,0,0,cropland,1.0,,0.0,cropland,0.0,0.0,1.0,0.0,0.0,0.0,40,96.0,89.0,78.0,41.0,0
+r2c2,2500,2500,0,0,cropland,1.0,,0.0,cropland,0.0,0.0,1.0,0.0,0.0,0.0,40,96.0,75.0,78.0,52.0,0
+r2c3,2500,2500,0,0,cropland,0.9896,built_up,0.0104,cropland,0.0,0.0,0.9896,0.0,0.0104,0.0,40,96.0,62.0,52.0,40.0,0
+r2c4,2500,2500,0,0,built_up,0.7244,cropland,0.2756,built_up,0.0,0.0,0.2756,0.0,0.7244,0.0,50,71.0,60.0,69.0,44.0,0
+r3c1,2500,2500,0,0,cropland,1.0,,0.0,cropland,0.0,0.0,1.0,0.0,0.0,0.0,40,92.0,88.0,77.0,40.0,0
+r3c2,2500,2500,0,0,cropland,1.0,,0.0,cropland,0.0,0.0,1.0,0.0,0.0,0.0,40,92.0,87.0,77.0,44.0,0
+r3c3,2500,2500,0,0,cropland,0.5552,built_up,0.4448,cropland,0.0,0.0,0.5552,0.0,0.4448,0.0,40,84.0,51.0,52.0,40.0,0
+r3c4,2500,2500,0,0,built_up,0.7764,cropland,0.2236,built_up,0.0,0.0,0.2236,0.0,0.7764,0.0,50,77.0,72.0,77.0,43.0,0

@@ -1,0 +1,58 @@
+{
+  "cell_id": "r2c4",
+  "timestamp_utc": "2026-10-12T11:19:16+00:00",
+  "model_id": "Haifald/vit-eurosat",
+  "model_revision": "1f933744e16bdda62c2a267a29b7a2ce753c4ff9",
+  "input_image": "outputs/model_inputs/{cell}.png",
+  "input_px": 64,
+  "input_resample": "bilinear",
+  "source_chip_px": 50,
+  "imagery": "COPERNICUS/S2_HARMONIZED ['Sentinel-2A'] median 2019-01-01..2019-04-01",
+  "rgb_stretch_dn": [
+    0,
+    3000
+  ],
+  "rgb_gamma": 1.0,
+  "predictions": [
+    {
+      "label": "Residential",
+      "score": 0.9245720505714417
+    },
+    {
+      "label": "Pasture",
+      "score": 0.05552412569522858
+    },
+    {
+      "label": "HerbaceousVegetation",
+      "score": 0.00760261295363307
+    },
+    {
+      "label": "PermanentCrop",
+      "score": 0.006595042534172535
+    },
+    {
+      "label": "SeaLake",
+      "score": 0.0031058944296091795
+    },
+    {
+      "label": "AnnualCrop",
+      "score": 0.0008768129628151655
+    },
+    {
+      "label": "Highway",
+      "score": 0.0006402304279617965
+    },
+    {
+      "label": "River",
+      "score": 0.0004220826958771795
+    },
+    {
+      "label": "Forest",
+      "score": 0.0003579160838853568
+    },
+    {
+      "label": "Industrial",
+      "score": 0.00030324712861329317
+    }
+  ]
+}

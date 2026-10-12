@@ -1,0 +1,51 @@
+{
+  "season": {
+    "tag": "2019m01-m03",
+    "start": "2019-01-01",
+    "end_exclusive": "2019-04-01"
+  },
+  "eurosat": {
+    "model": "Haifald/vit-eurosat",
+    "revision": "1f933744e16bdda62c2a267a29b7a2ce753c4ff9",
+    "input_px": 64,
+    "cell_rule": "argmax of summed crosswalked probabilities"
+  },
+  "dynamic_world": {
+    "collection": "GOOGLE/DYNAMICWORLD/V1",
+    "n_images": 9,
+    "n_s2_scenes": 9,
+    "matched_to_s2_scenes": true,
+    "cloud_score_mask": true,
+    "temporal_aggregation": "mode",
+    "resampling": "nearest, native 10 m UTM",
+    "cell_rule": "pixel crosswalk + majority; strict if >= 0.5"
+  },
+  "cgls": {
+    "image": "COPERNICUS/Landcover/100m/Proba-V-C3/Global/2019",
+    "bands": [
+      "discrete_classification",
+      "discrete_classification-proba",
+      "data-density-indicator",
+      "bare-coverfraction",
+      "crops-coverfraction",
+      "grass-coverfraction",
+      "shrub-coverfraction",
+      "tree-coverfraction",
+      "urban-coverfraction",
+      "water-permanent-coverfraction",
+      "water-seasonal-coverfraction"
+    ],
+    "temporal_definition": "annual 2019 epoch",
+    "native_crs": "EPSG:3857",
+    "native_pixel_deg": 100.0,
+    "resampling": "nearest to 10 m analysis grid",
+    "cell_rule": "pixel crosswalk + majority (area-weighted)"
+  },
+  "files": {
+    "dw_tif": "outputs/comparators/dw_2019m01-m03_mode_10m.tif",
+    "cgls_10m_tif": "outputs/comparators/cgls_lc100_c3_2019_on10mgrid.tif",
+    "cgls_native_tif": "outputs/comparators/cgls_lc100_c3_2019_native100m.tif",
+    "agreement": "outputs/tables/agreement_2019m01-m03_mode.csv",
+    "cell_results": "outputs/tables/cell_level_results.csv"
+  }
+}

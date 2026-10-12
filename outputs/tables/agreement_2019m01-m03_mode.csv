@@ -1,0 +1,7 @@
+scope,label_a,label_b,n_agree,n_compared,n_excluded,pct_agree,agree_cells,disagree_cells
+agreement between products (not accuracy),method_label,dw_label,3,12,0,25.0,"r2c4,r3c3,r3c4","r1c1,r1c2,r1c3,r1c4,r2c1,r2c2,r2c3,r3c1,r3c2"
+agreement between products (not accuracy),method_label,cgls_label,2,12,0,16.7,"r2c4,r3c4","r1c1,r1c2,r1c3,r1c4,r2c1,r2c2,r2c3,r3c1,r3c2,r3c3"
+agreement between products (not accuracy),dw_label,cgls_label,11,12,0,91.7,"r1c1,r1c2,r1c3,r1c4,r2c1,r2c2,r2c3,r2c4,r3c1,r3c2,r3c4",r3c3
+"check vs visual labels (non-mixed only; imperfect, tiny)",visual_label,method_label,1,6,0,16.7,r3c4,"r1c2,r1c3,r1c4,r2c1,r2c2"
+"check vs visual labels (non-mixed only; imperfect, tiny)",visual_label,dw_label,5,6,0,83.3,"r1c2,r1c3,r2c1,r2c2,r3c4",r1c4
+"check vs visual labels (non-mixed only; imperfect, tiny)",visual_label,cgls_label,5,6,0,83.3,"r1c2,r1c3,r2c1,r2c2,r3c4",r1c4

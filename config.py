@@ -40,7 +40,6 @@ REQUIREMENTS_FILE = ROOT / "requirements.txt"
 # 1. Google Earth Engine
 # ---------------------------------------------------------------------------
 
-# Read from the environment first so the project ID never has to be committed.
 EE_PROJECT = "ee-nitinsharma"
 # ---------------------------------------------------------------------------
 # 2. Area of interest and grid
